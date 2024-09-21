@@ -29,31 +29,55 @@
 
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                primary:'#1DD100',
-                secondary:'#030712',
-                couponOne:'#FFBF0F',
-                couponTwo:'#F78C9C',
-                mobileMenu:'#F7F8F8',
-                body:'#30071299',
-                buttonColor:'rgba(29, 209, 0)'
-              },
-              fontFamily:{
-                RaleWay:'Raleway',
-                Inter:'Inter'
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primary: '#1DD100',
+                        secondary: '#030712',
+                        couponOne: '#FFBF0F',
+                        couponTwo: '#F78C9C',
+                        mobileMenu: '#F7F8F8',
+                        body: '#30071299',
+                        buttonColor: 'rgba(29, 209, 0)'
+                    },
+                    fontFamily: {
+                        RaleWay: 'Raleway',
+                        Inter: 'Inter'
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 
 
 </head>
 
 <body>
+
+    <!-- setBooking Section -->
+    <section class="bg-white px-8 py-5 w-11/12 mx-auto rounded-2xl shadow-sm grid grid-cols-3 gap-5">
+        <div class="bg-red-600 col-span-2">
+            <div>
+                <h2 class="text-2xl font-semibold text-secondary">Select Your Seat</h2>
+            </div>
+            <div class="border-b-2 border-dashed my-4 "></div>
+            <div class="flex justify-between items-center">
+                <p>
+                    <i class="fa-solid fa-couch"></i>
+                    <span>Available</span>
+                </p>
+                <p class="text-primary">
+                    <i class="fa-solid fa-couch"></i>
+                    <span>Available</span>
+                </p>
+            </div>
+            <div class="border-b-2 border-dashed my-4 "></div>
+        </div>
+
+        <div class="bg-green-700 col-span-1">Input section</div>
+    </section>
+
 
     <script src="js.js"></script>
 </body>
