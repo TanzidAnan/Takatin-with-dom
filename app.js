@@ -3,7 +3,9 @@ const totleBookedEl = document.getElementById('totle-booked');
 const availableSeat = document.getElementById('available-seat');
 const totlePriceEl = document.getElementById('totle-price');
 const couponInput = document.getElementById('coupon-field')
-const couponButton = document.getElementById('coupon-btn')
+const couponButton = document.getElementById('coupon-btn');
+const defultTextEl =document.getElementById('default-text');
+const grandTotleEl =document.getElementById('grand-totle')
 let selectedSeat = [];
 let totlePrice = 0
 function handleSelectSate(event) {
@@ -23,6 +25,7 @@ function handleSelectSate(event) {
         const availableSeatNumber = availableSeatValue - 1;
         availableSeat.innerText = availableSeatNumber
 
+        defultTextEl.classList.add('hidden')
 
 
         selecdetSeatEl.innerHTML += `<li class="text-base font-normal flex justify-between ">
@@ -44,3 +47,20 @@ function handleSelectSate(event) {
     }
 
 }
+
+document.getElementById('coupon-btn').addEventListener('click',function(){
+    const couponInputValue =document.getElementById('coupon-field').value;
+    let couponSave =0;
+    if(couponInputValue ==='NEW50' && couponInputValue === "Couple 20"){
+        alert('your provite coupen is not defint');
+        return;
+    }
+    if(couponInputValue === 'NEW50'){
+        couponSave =totlePrice*.15
+    }
+    else if(couponInputValue === 'Couple 20'){
+        couponSave =totlePrice*.20;
+    }
+    const grandTotleValue = totlePrice-couponSave;
+    grandTotleEl.innerText =grandTotleValue.toFixed(2)
+})
