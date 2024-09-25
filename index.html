@@ -54,6 +54,54 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Item 1</a></li>
+                            <li>
+                                <a>Parent</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl">daisyUI</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Item 1</a></li>
+                        <li>
+                            <details>
+                                <summary>Parent</summary>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li><a>Item 3</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn">Button</a>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <section class="text-center text-3xl font-bold text-primary">
         <h2>
@@ -92,7 +140,8 @@
                 <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
                     <button onclick="handleSelectSate(this)"
                         class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition duration-200 ease-in-out">A1</button>
-                    <button onclick="handleSelectSate(this)" class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition duration-200 ease-in-out">A2</button>
+                    <button onclick="handleSelectSate(this)"
+                        class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition duration-200 ease-in-out">A2</button>
                     <p class="col-span-2"></p>
                     <button onclick="handleSelectSate(this)"
                         class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition duration-200 ease-in-out">A3</button>
@@ -243,8 +292,8 @@
                     <div class="border-b-2 my-4 border-dashed"></div>
                     <div
                         class="flex items-center gap-2 border-y-2 py-2 my-2 border-dashed text-lg font-semibold justify-between">
-                        <input id="coupon-field" disabled type="text" class="input my-5 w-full input-primary border-primary"
-                            placeholder="Have a Coupon">
+                        <input id="coupon-field" disabled type="text"
+                            class="input my-5 w-full input-primary border-primary" placeholder="Have a Coupon">
                         <button id="coupon-btn" class="btn bg-[#1DD100]" disabled>Apply</button>
                     </div>
                     <div class="text-lg font-semibold flex justify-between">
