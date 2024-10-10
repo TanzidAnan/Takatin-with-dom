@@ -5,7 +5,10 @@ const totlePriceEl = document.getElementById('totle-price');
 const couponInput = document.getElementById('coupon-field')
 const couponButton = document.getElementById('coupon-btn');
 const defultTextEl =document.getElementById('default-text');
-const grandTotleEl =document.getElementById('grand-totle')
+const grandTotleEl =document.getElementById('grand-totle');
+menuBtn.addEventListener('click',function(){
+    console.log(6546)
+})
 let selectedSeat = [];
 let totlePrice = 0
 function handleSelectSate(event) {
