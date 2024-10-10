@@ -15,7 +15,7 @@ function handleSelectSate(event) {
         alert('Seat already Booking');
         return;
     }
-    else if(selectedSeat.length<39) {
+    else if(selectedSeat.length<20) {
         const targetElement = event.innerText;
         //  targetElement.classList.add('bg-red-300');
         selectedSeat.push(event.innerText);
