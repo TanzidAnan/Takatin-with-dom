@@ -14,6 +14,7 @@ function handleSelectSate(event) {
     const value = event.innerText;
     console.log(event);
     event.classList.add('bg-green-600')
+    event.classList.add('text-white')
 
     if (selectedSeat.includes(value)) {
         alert('Seat already Booking');
