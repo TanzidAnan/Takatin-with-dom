@@ -27,7 +27,7 @@ function handleSelectSate(event) {
 
         defultTextEl.classList.add('hidden')
 
-
+ 
         selecdetSeatEl.innerHTML += `<li class="text-base font-normal flex justify-between ">
         <span>${targetElement}</span>
         <span>Econone</span>
