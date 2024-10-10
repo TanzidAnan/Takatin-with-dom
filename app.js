@@ -1,3 +1,4 @@
+alert('No responsive')
 const selecdetSeatEl = document.getElementById('selecdet-seat');
 const totleBookedEl = document.getElementById('totle-booked');
 const availableSeat = document.getElementById('available-seat');
