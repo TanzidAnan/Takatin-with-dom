@@ -1,4 +1,4 @@
-alert('No responsive')
+// alert('No responsive')
 const selecdetSeatEl = document.getElementById('selecdet-seat');
 const totleBookedEl = document.getElementById('totle-booked');
 const availableSeat = document.getElementById('available-seat');
@@ -7,13 +7,13 @@ const couponInput = document.getElementById('coupon-field')
 const couponButton = document.getElementById('coupon-btn');
 const defultTextEl =document.getElementById('default-text');
 const grandTotleEl =document.getElementById('grand-totle');
-menuBtn.addEventListener('click',function(){
-    console.log(6546)
-})
+
 let selectedSeat = [];
 let totlePrice = 0
 function handleSelectSate(event) {
     const value = event.innerText;
+    console.log(event);
+    event.classList.add('bg-green-600')
 
     if (selectedSeat.includes(value)) {
         alert('Seat already Booking');
